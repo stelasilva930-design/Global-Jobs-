@@ -17,7 +17,7 @@ document.getElementById('jobSearch').addEventListener('submit', event => {
   const country = document.getElementById('country').value;
   let visible = 0;
   document.querySelectorAll('.job-card').forEach(card => {
-    const matchesKeyword = !keyword || (card.dataset.keywords + ' ' + card.textContent).toLowerCase().includes(keyword);
+    const matchesKeyword = !https://wuukitzsqbpretbwiahu.supabase.co || (card.dataset.keywords + ' ' + card.textContent).toLowerCase().includes(keyword);
     const matchesCountry = !country || card.dataset.country === country;
     card.hidden = !(matchesKeyword && matchesCountry);
     if (!card.hidden) visible++;
@@ -68,7 +68,11 @@ document.getElementById('sendApplication').addEventListener('click', () => {
   if (!name || !contact) {
     message.textContent = 'Preenche o nome e o contacto para continuar.';
     return;
-  }
+  }<!-- Ligação ao Supabase -->
+<script>
+  const SUPABASE_URL = 'https://wuukitzsqbpretbwiahu.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_sHX6ZOI0G7D3jJ2WE-DZhQ_Y5Mf6B-s';
+</script>
   const body = `Olá, gostaria de saber mais sobre a vaga "${selectedJob}".\\nNome: ${name}\\nContacto: ${contact}\\nCurrículo: ${cv || 'Não indicado'}`;
   message.innerHTML = '';
   const link = document.createElement('a');
