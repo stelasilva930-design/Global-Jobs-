@@ -1,0 +1,19 @@
+GLOBALJOB & SHOP — PROTÓTIPO INICIAL
+
+Ficheiros:
+- index.html: conteúdo e estrutura
+- styles.css: design responsivo
+- script.js: filtros, carrinho demonstrativo, formulário e candidatura via WhatsApp
+
+Como testar:
+1. Extrai o ZIP.
+2. Abre index.html num navegador moderno.
+3. Testa a pesquisa de vagas, filtros da loja e botões de candidatura.
+
+Importante:
+- Vagas e produtos são exemplos fictícios/demonstrativos.
+- O carrinho não aceita pagamentos.
+- Formulários não guardam dados em servidor.
+- O botão de WhatsApp abre uma mensagem pré-preenchida; o utilizador deve confirmar o envio.
+- Antes de publicar: trocar contactos de exemplo, criar política de privacidade e termos, verificar direitos de uso de marcas/imagens, configurar alojamento, backend/base de dados, autenticação, proteção de dados, validação de empresas/vagas e integração de pagamentos compatível com Angola e mercados-alvo.
+- Não anuncies vagas ou apoio a vistos sem confirmação verificável do empregador.
