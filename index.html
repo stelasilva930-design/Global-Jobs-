@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GlobalJob & Shop — oportunidades de emprego internacional, recrutamento e loja online.">
+  <title>GlobalJob & Shop | Emprego, Talento e Compras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">Oportunidades globais. Talento sem fronteiras.</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="GlobalJob & Shop início"><span class="brand-mark">G</span><span>GlobalJob <b>& Shop</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#empregos">Empregos</a>
+      <a href="#empresas">Empresas</a>
+      <a href="#loja">Loja online</a>
+      <a href="#como-funciona">Como funciona</a>
+    </nav>
+    <a class="button button-small" href="#registo">Começar</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">EMPREGO · RECRUTAMENTO · COMÉRCIO</span>
+        <h1>O teu próximo passo pode estar <em>em qualquer lugar.</em></h1>
+        <p>Descobre oportunidades de emprego internacionais, liga-te a empresas e explora uma loja online num só lugar.</p>
+        <div class="hero-actions">
+          <a class="button" href="#empregos">Encontrar emprego</a>
+          <a class="button button-outline" href="#loja">Explorar a loja</a>
+        </div>
+        <div class="trust-row"><span>✓ Pesquisa por país</span><span>✓ Candidatura simples</span><span>✓ Experiência adaptada ao telemóvel</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="globe">◎</div>
+        <div class="floating-tag tag-one"><span class="tag-icon">↗</span><div><b>Oportunidades globais</b><small>Descobre novas possibilidades</small></div></div>
+        <div class="floating-tag tag-two"><span class="tag-icon tag-gold">✦</span><div><b>Talento em destaque</b><small>Empresas e candidatos conectados</small></div></div>
+        <div class="hero-card-caption"><span class="pulse"></span> O teu futuro não tem fronteiras</div>
+      </div>
+    </section>
+
+    <section class="search-panel" id="empregos">
+      <div><span class="eyebrow">COMEÇA A PESQUISAR</span><h2>Encontra a tua oportunidade</h2></div>
+      <form id="jobSearch" class="search-form">
+        <label>Palavra-chave<input id="keyword" type="search" placeholder="Ex.: cuidador, logística, vendas"></label>
+        <label>País<select id="country"><option value="">Todos os países</option><option>Portugal</option><option>Espanha</option><option>França</option><option>Alemanha</option><option>Irlanda</option><option>Países Baixos</option><option>Canadá</option><option>Outro</option></select></label>
+        <button class="button" type="submit">Pesquisar vagas</button>
+      </form>
+      <p class="form-note">Dica: confirma sempre os requisitos de residência, autorização de trabalho e eventual apoio a vistos diretamente com o empregador.</p>
+    </section>
+
+    <section class="section" id="vagas">
+      <div class="section-heading"><div><span class="eyebrow">OPORTUNIDADES</span><h2>Vagas em destaque</h2><p>Exemplos demonstrativos para mostrar como as vagas aparecerão.</p></div><span class="demo-badge">DEMONSTRAÇÃO</span></div>
+      <div class="job-grid" id="jobGrid">
+        <article class="job-card" data-country="Portugal" data-keywords="logística armazém operador stock">
+          <div class="job-top"><span class="company-logo logo-blue">L</span><span class="job-type">Tempo inteiro</span></div><h3>Operador(a) de Armazém</h3><p class="company">Empresa de logística · Portugal</p><div class="job-meta"><span>📍 Portugal</span><span>◷ Turnos</span></div><div class="job-bottom"><span class="salary">Salário a confirmar</span><button class="text-button apply-button" data-title="Operador(a) de Armazém">Ver candidatura →</button></div>
+        </article>
+        <article class="job-card" data-country="Irlanda" data-keywords="cuidador idosos saúde assistência">
+          <div class="job-top"><span class="company-logo logo-green">C</span><span class="job-type">A tempo inteiro</span></div><h3>Assistente de Cuidados</h3><p class="company">Prestador de cuidados · Irlanda</p><div class="job-meta"><span>📍 Irlanda</span><span>♡ Cuidados</span></div><div class="job-bottom"><span class="salary">Condições a confirmar</span><button class="text-button apply-button" data-title="Assistente de Cuidados">Ver candidatura →</button></div>
+        </article>
+        <article class="job-card" data-country="Espanha" data-keywords="vendas atendimento cliente loja">
+          <div class="job-top"><span class="company-logo logo-gold">S</span><span class="job-type">Tempo inteiro</span></div><h3>Assistente de Vendas</h3><p class="company">Comércio a retalho · Espanha</p><div class="job-meta"><span>📍 Espanha</span><span>♧ Atendimento</span></div><div class="job-bottom"><span class="salary">Salário a confirmar</span><button class="text-button apply-button" data-title="Assistente de Vendas">Ver candidatura →</button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyJobs" hidden>Não encontrámos vagas com esses filtros. Tenta outra palavra-chave ou país.</p>
+    </section>
+
+    <section class="business-banner" id="empresas">
+      <div><span class="eyebrow light">PARA EMPRESAS E RECRUTADORES</span><h2>Encontra talento onde quer que esteja.</h2><p>Apresenta a tua empresa e prepara anúncios de emprego para chegar a candidatos de diferentes países.</p></div>
+      <a class="button button-light" href="#registo">Publicar uma vaga <span>→</span></a>
+    </section>
+
+    <section class="section shop-section" id="loja">
+      <div class="section-heading"><div><span class="eyebrow">A LOJA</span><h2>Descobre os nossos produtos</h2><p>Moda, beleza e artigos variados — demonstração do catálogo inicial.</p></div><span class="cart-pill">🛍️ Carrinho: <b id="cartCount">0</b></span></div>
+      <div class="product-filters"><button class="filter active" data-filter="Todos">Todos</button><button class="filter" data-filter="Moda">Moda</button><button class="filter" data-filter="Beleza">Beleza</button><button class="filter" data-filter="Acessórios">Acessórios</button><button class="filter" data-filter="Diversos">Diversos</button></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="Moda"><div class="product-art art-fashion">✧<span>MODA</span></div><div class="product-info"><small>Moda</small><h3>Blusa clássica</h3><div class="product-bottom"><b>Preço por definir</b><button class="add-cart" data-product="Blusa clássica" aria-label="Adicionar Blusa clássica ao carrinho">+</button></div></div></article>
+        <article class="product-card" data-category="Beleza"><div class="product-art art-beauty">✿<span>BELEZA</span></div><div class="product-info"><small>Beleza</small><h3>Conjunto de cuidados</h3><div class="product-bottom"><b>Preço por definir</b><button class="add-cart" data-product="Conjunto de cuidados" aria-label="Adicionar Conjunto de cuidados ao carrinho">+</button></div></div></article>
+        <article class="product-card" data-category="Acessórios"><div class="product-art art-accessory">◇<span>ACESSÓRIOS</span></div><div class="product-info"><small>Acessórios</small><h3>Mala elegante</h3><div class="product-bottom"><b>Preço por definir</b><button class="add-cart" data-product="Mala elegante" aria-label="Adicionar Mala elegante ao carrinho">+</button></div></div></article>
+        <article class="product-card" data-category="Diversos"><div class="product-art art-other">✦<span>DIVERSOS</span></div><div class="product-info"><small>Diversos</small><h3>Artigo do dia a dia</h3><div class="product-bottom"><b>Preço por definir</b><button class="add-cart" data-product="Artigo do dia a dia" aria-label="Adicionar Artigo do dia a dia ao carrinho">+</button></div></div></article>
+      </div>
+      <p class="form-note">Os produtos, preços e imagens são exemplos. O carrinho desta demonstração não processa pagamentos.</p>
+    </section>
+
+    <section class="section how-section" id="como-funciona">
+      <div class="section-heading centered"><div><span class="eyebrow">SIMPLES E CLARO</span><h2>Uma plataforma, várias possibilidades</h2></div></div>
+      <div class="steps"><article><span>01</span><h3>Explora</h3><p>Pesquisa oportunidades e produtos por categoria e país.</p></article><article><span>02</span><h3>Conecta-te</h3><p>Prepara o teu perfil para contactar empresas ou comprar.</p></article><article><span>03</span><h3>Avança com segurança</h3><p>Confirma os detalhes e as condições antes de assumir compromissos.</p></article></div>
+    </section>
+
+    <section class="signup-section" id="registo">
+      <div><span class="eyebrow light">FAZ PARTE DA COMUNIDADE</span><h2>Vamos criar novas oportunidades.</h2><p>Deixa o teu contacto de demonstração para veres como funcionará o formulário.</p></div>
+      <form id="signupForm" class="signup-form"><label>O teu nome<input required name="name" placeholder="Nome completo"></label><label>Email ou WhatsApp<input required name="contact" placeholder="Email ou número de telefone"></label><label>Quero participar como<select name="role"><option>Candidato(a)</option><option>Empresa / recrutador</option><option>Cliente da loja</option></select></label><button class="button button-light" type="submit">Enviar interesse</button><p id="signupMessage" role="status"></p></form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">G</span><span>GlobalJob <b>& Shop</b></span></a><p>Emprego, talento e comércio sem fronteiras.</p><div class="footer-links"><a href="#empregos">Empregos</a><a href="#empresas">Empresas</a><a href="#loja">Loja</a><a href="mailto:contacto@exemplo.com">Contacto (substituir)</a></div><small>© <span id="year"></span> GlobalJob & Shop · Projeto demonstrativo. Substitui os contactos de exemplo antes de publicar.</small></footer>
+
+  <dialog id="applyDialog"><form method="dialog" class="dialog-content"><button class="dialog-close" aria-label="Fechar">×</button><span class="eyebrow">CANDIDATURA</span><h2 id="applyTitle">Candidatar-me</h2><p>Esta é uma demonstração. Para receber candidaturas reais, será necessário configurar servidor, armazenamento seguro de currículos e política de privacidade.</p><label>Nome<input id="applicantName" required placeholder="O teu nome"></label><label>Email ou WhatsApp<input id="applicantContact" required placeholder="Contacto"></label><label>Link do currículo (opcional)<input id="cvLink" type="url" placeholder="https://..."></label><button class="button" id="sendApplication" type="button">Preparar mensagem</button><p id="applyMessage" role="status"></p></form></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
